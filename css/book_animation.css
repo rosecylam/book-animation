@@ -1,0 +1,144 @@
+body {
+	background: white;
+}
+
+.container {
+	background: #ded6a8;
+	width: 400px;
+	height: 600px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: -1px;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: -1px;
+	text-align: center;
+	font-weight: 700;
+	color: black;
+	font-size: 1.8em;
+}
+
+.authors {
+	/*background: white;*/
+	font-weight: 300;
+	color: black;
+	font-size: 15pt;
+	position: relative;
+	top: -20px;
+	left: 50px;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 0px;
+
+	animation: typewriter 4s steps(30);
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes typewriter {
+	0%		{ width: 0px; }
+	100%	{ width: 300px; }
+}
+
+.sun {
+	background-color: #e80202;
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	box-shadow: 0px 0px 20px #e80202;
+	margin-left: 100px;
+	z-index: -2;
+	animation: sunrise 9s;
+	animation-fill-mode: forwards;
+}
+
+.sun:hover {
+	animation: explode 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes sunrise {
+	0%		{ transform: translate(0px, 500px); }
+	100%		{ transform: translate(0px, 0px); height: 200px; width: 200px; }
+}
+
+@keyframes explode {
+	0%		{ transform: translate(0px, 0px); height: 200px; width: 200px; }
+	100%	{ transform: translate(-300px, -300px); height: 900px; width: 900px; }
+}
+
+.names {
+	background-color: #ded6a8;
+	width: 600px;
+	height: 220px;
+	margin-top: 85px;
+
+	font-family: 'Roboto', sans-serif;
+	color: #3b99b3;
+	font-weight: 700;
+	text-align: left;
+	text-transform: uppercase;
+
+	text-overflow: clip;
+	white-space: nowrap;
+    overflow: hidden;
+}
+
+.honda {
+	font-size: 10pt;
+	animation: right 60s linear;
+}
+
+.nomura {
+	font-size: 11pt;
+	animation: left 60s linear;
+}
+
+.marubeni {
+	font-size: 12pt;
+	animation: right 60s linear;
+}
+
+.idemitsu {
+	font-size: 13pt;
+	animation: left 60s linear;
+}
+
+.nissan {
+	font-size: 14pt;
+	animation: right 60s linear;
+}
+
+.toshiba {
+	font-size: 15pt;
+	animation: left 60s linear;
+}
+
+.toyota {
+	font-size: 16pt;
+	animation: right 60s linear;
+}
+
+.kawasaki {
+	font-size: 17pt;
+	animation: left 60s linear;
+}
+
+@keyframes left {
+	0%		{ transform: translate(0px, 0px); color: #3b99b3; }
+	25%		{  color: #e80202; }
+	100%	{ transform: translate(-1000px, 0px); color: #e80202; }
+}
+
+@keyframes right {
+	0%		{ transform: translate(0px, 0px); color: #3b99b3; }
+	25%		{  color: #e80202; }
+	100%	{ transform: translate(1000px, 0px); color: #e80202; }
+}
